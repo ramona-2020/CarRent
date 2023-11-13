@@ -8,7 +8,8 @@ SECRET_KEY = 'django-insecure-w*71k65v!+!2tp#^=wa3+&@rj$0hpzd$hjn7z&cv4t7x4melwl
 # TODO: SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'transport-bg.oa.r.appspot.com', '172.253.115.153']
+CSRF_TRUSTED_ORIGINS = [f'https://{x}' for x in ALLOWED_HOSTS]
 
 # Application definition
 INSTALLED_APPS = [
